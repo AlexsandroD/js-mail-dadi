@@ -31,3 +31,27 @@ console.log(result)
 })
 
 
+
+// bisogna creare un'arrey con numeri da 1 a 6
+const buttunDadi = document.getElementById('btn-2');
+const numeri = [1,2,3,4,5,6];
+
+
+buttunDadi.addEventListener('click', function(){
+
+
+    let randomPc = Math.floor(Math.random(...numeri) *6 +1);
+    document.getElementById('pc').innerHTML = 'Pc ' + randomPc ;
+    
+    let randomPlayer = Math.floor(Math.random(...numeri) *6 +1);
+    document.getElementById('player').innerHTML = 'Player1 ' + randomPlayer;
+    
+    
+    if(randomPc > randomPlayer){
+        let risultato = document.getElementById('risultato').innerHTML = 'Pc vince';
+    }else{
+        let risultato = document.getElementById('risultato').innerHTML = 'Player vince';
+    };
+
+})
+
