@@ -9,16 +9,26 @@
 </head>
 <body>
     <div class="container">
-       <input id="email" type="email">
-       <button id="bnt-1">click</button>
-       <p id="result"></p>
+        <div class="row">
+            <label for="Email">Inserire una email registrata</label>
+            <input id="email" type="email" placeholder="example@gmail.com">
+        </div>
+        <div class="row fl-dir-cl">
+            <button id="bnt-1">Submit</button>
+            <p id="result">La tua email:</p>
+        </div>
     </div>
 
     
-    <div class="containe">
-        <button id="btn-2">Gioca</button>
-        <span id="pc"></span><span id="player"></span>
-        <h1 id="risultato"></h1>
+    <div class="container">
+        <div class="row ">
+            <div class="box dadi">
+                <button id="btn-2">Tira il Dado</button>
+                <span id="pc">Dado Pc</span>
+                <span id="player">Dado Giocatore 1</span>
+                <h1 id="risultato">Risultato</h1>
+            </div>
+        </div>
     </div>
     
     <script src="js/script.js"></script>

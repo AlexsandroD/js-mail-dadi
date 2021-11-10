@@ -12,5 +12,112 @@ torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 Buon lavoro e buon divertimento! :computerrage::malditesta: */
 
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    text-transform: uppercase;
+    background-color: #D6FFD5;
+    height: 100vh;
+}
+
+.container{
+    padding-top: 100px;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.fl-dir-cl{
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.box{
+    text-align: center;
+    background-color: turquoise;
+    width:30%;
+    padding:50px;
+}
+label{
+    font-size: 25px;
+}
+
+label,button{
+    background-color: tomato;
+    color:white;
+    margin:10px 10px;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+button{
+    width: 200px;
+    border:none;
+    margin-bottom: 20px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 600;
+}
 
 
+.dadi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    font-size: 30px;
+    margin:10px 10px;
+}
+
+span:nth-of-type(2){
+    color:tomato;
+}
+
+.dadi h1{
+    font-size: 35px;
+    color: white;
+    padding-top: 20px;
+}
+
+input{
+    width:10%;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color:  lightgray !important;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    
+}
+
+input::-webkit-input-placeholder {
+    color: black; /*Change the placeholder color*/
+    opacity: 0.5; /*Change the opacity between 0 and 1*/
+}
+
+input:focus::placeholder {
+    color: transparent;
+    
+  }

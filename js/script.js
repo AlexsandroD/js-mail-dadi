@@ -22,9 +22,9 @@ for(i = 0; i <emailReg.length; i++){
 }
 
 if (controllo){    
-    let result = document.getElementById('result').innerHTML = 'email riconosciuta';
+    let result = document.getElementById('result').innerHTML += ' é riconosciuta';
 }else{
-    let result = document.getElementById('result').innerHTML = 'email non riconosciuta';
+    let result = document.getElementById('result').innerHTML += ' non é riconosciuta';
 }
 
 console.log(result)
@@ -40,18 +40,23 @@ const numeri = [1,2,3,4,5,6];
 buttunDadi.addEventListener('click', function(){
 
 
-    let randomPc = Math.floor(Math.random(...numeri) *6 +1);
-    document.getElementById('pc').innerHTML = 'Pc ' + randomPc ;
+    let randomPc = Math.floor(Math.random(numeri) *12 +1);
+    document.getElementById('pc').innerHTML = 'Pc: ' + randomPc ;
     
-    let randomPlayer = Math.floor(Math.random(...numeri) *6 +1);
-    document.getElementById('player').innerHTML = 'Player1 ' + randomPlayer;
+    let randomPlayer = Math.floor(Math.random(numeri) *6 +1);
+    document.getElementById('player').innerHTML = 'Player1: ' + randomPlayer;
     
     
     if(randomPc > randomPlayer){
         let risultato = document.getElementById('risultato').innerHTML = 'Pc vince';
-    }else{
-        let risultato = document.getElementById('risultato').innerHTML = 'Player vince';
+    }else if(randomPc == randomPlayer){
+        let risultato = document.getElementById('risultato').innerHTML = 'Pareggio';
+    }else
+    {
+        let risultato = document.getElementById('risultato').innerHTML = 'Player1 vince';
     };
+
+    
 
 })
 
